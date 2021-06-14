@@ -1,0 +1,53 @@
+﻿@model ProjetoPoduto.Models.Produto
+@{
+    ViewBag.Title = "Info";
+}
+
+<h2>Informações do Produto</h2>
+<fieldset>
+    <div class="editor-label">
+        Código:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => Model.codigo)
+    </div>
+
+    <div class="editor-label">
+        Nome do Produto:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.nome)
+    </div>
+
+    <div class="editor-label">
+        Descrição:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.desc)
+    </div>
+
+    <div class="editor-label">
+        Peso:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.peso)
+    </div>
+
+    <div class="editor-label">
+        Categoria:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.categoria)
+    </div>
+
+    <div class="editor-label">
+        Valor unitário:
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.valUnit)
+    </div>
+
+    @Html.ActionLink("Voltar", "Index")
+</fieldset>
+
+
